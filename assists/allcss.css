@@ -1,0 +1,232 @@
+body{
+background-color:#E0E0E0;
+margin:6.5% 10% 1% 10%;
+}
+*{
+	font-family: "微軟正黑體";
+ font-family:cursive;
+}
+.mainarea{
+  background-color: #666666;
+  margin-top: -100px;
+}
+.myimg , .myimgback{
+width: 200px;
+height:200px;
+float: left;
+padding: 30px;
+border:4px solid white;
+margin: 20px;
+border-radius: 10px;
+position: absolute;
+backface-visibility: hidden;
+transform-style: preserve-3d;
+transform: perspective(800px) rotateY(0deg);
+}
+.myimgback{
+background-color:white ;
+transform: translateZ(2px) rotateY(180deg);
+padding:30px;
+border:4px solid white;
+margin: 20px;
+text-align: center;
+line-height:70px;
+opacity: 0.6;
+}
+.flipper{
+ margin:20px;
+}
+.flipper:hover .myimg{
+	transform: rotateY(180deg);	
+	transition: all 1s;
+	perspective:1200px;
+}
+.flipper:hover .myimgback{
+	transform: rotateY(0deg);
+}
+.head{
+border:5px solid white;
+padding-bottom: 35px;
+border-radius: 10px;
+}
+.headtxt{
+text-align: left;
+font-size:20px;
+margin-left: 30%;
+}
+.txt{
+font-size: 18px;
+font-weight: bold;
+text-align:left;
+line-height: 30px;
+}
+.container {
+width: 100%;
+background-color:white;
+}
+.skills {
+text-align: right;
+padding-top: 10px;
+padding-bottom: 10px;
+color: white;
+}
+.title{
+text-align: center;
+font-size: 40px;
+font-weight: bold;
+text-shadow: 6px 3px 3px black;
+color: 	#004B97;
+letter-spacing: 2px;
+font-family: fantasy;
+}
+.aa{
+	color:#EA0000;
+	text-align: center;
+font-size: 45px;
+font-weight: bold;
+text-shadow: 6px 3px 3px black;
+letter-spacing: 2px;
+padding-top: 25PX;
+font-family: fantasy;
+}
+.sk{
+border:5px solid white;
+margin-top: 20px;
+margin-bottom: 20px;
+padding:20px;
+padding-bottom: 30px;
+border-radius: 10px;
+}
+.c{width: 75%; background-color: #81C0C0; animation: barc 2s ease-in;}
+.vb{width: 70%; background-color: #A6A6D2; animation: barvb 2s ease-in;}
+.html {width: 90%; background-color: #C07AB8;animation: barhtml 2s ease-in;}
+.css {width: 70%; background-color: #FFE66F; animation: barcss 2s ease-in;}
+.js {width: 85%; background-color: #FFA042;animation: barjs 2s ease-in;}
+.java{width: 80%; background-color: #FF5151;animation: barjava 2s ease-in;}
+@keyframes barc
+{
+from { width: 0%
+}
+to { width: 75% }
+}
+@keyframes barvb
+{
+from { width: 0%
+}
+to { width: 70% }
+}
+@keyframes barhtml
+{
+from { width: 0%
+}
+to { width: 90% }
+}
+@keyframes barcss
+{
+from { width: 0%
+}
+to { width: 70% }
+}
+@keyframes barjs
+{
+from { width: 0%
+}
+to { width: 85% }
+}
+@keyframes barjava
+{
+from { width: 0%
+}
+to { width: 80% }
+}
+.timeline {
+  position: relative;
+  max-width: 1050px;
+  margin: 0 auto;
+
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+.containertime {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+.containertime::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid black;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+.left {
+  left: -7.5%;
+}
+
+.right {
+  left: 50%;
+}
+.right::after {
+  left: -16px;
+}
+.content {
+  padding: 20px 30px;
+  background-color:#DDDDDD;
+  position: relative;
+  border-radius: 6px;
+
+}
+.footertxt{
+  font-size: 30px;
+  letter-spacing: 3px;
+  padding-bottom: 5px;
+}
+.footer{
+	 text-align: center;
+  border: 4px solid white;
+  padding: 4%;
+  border-radius: 6px;
+}
+.content:hover{
+	
+	transition: 1s,  1s;
+	opacity: 0.6;
+}
+.linkimg{
+		height: 55px;
+		width: 55px;
+		margin-left: 5%;
+}
+.linkimg:hover{
+	height: 70px;
+	width: 70px;
+	transition: all 1s;
+}
+.linkarea{
+	margin-left: 65%;
+}
+.linkarea2{
+	margin-left: -5%;
+	margin-top: 20px;
+}
+.title:hover{
+	color: white;
+	transition: all 1s;
+}
